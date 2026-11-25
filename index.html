@@ -18,6 +18,21 @@ a{color:#2A6877}a:hover{color:#18303B}
 .btn{color:#18303B;background:#F4B90B}.btn:hover{color:#18303B;background:#FFD04A}
 a:focus-visible,button:focus-visible{outline:3px solid #F4B90B;outline-offset:2px;box-shadow:0 0 0 2px #18303B}
 @media (max-width:700px){.dwg-text{display:none}}
+
+/* Phone layout */
+@media (max-width:700px){
+header>div{padding-top:12px!important;padding-bottom:12px!important;row-gap:6px!important}
+nav[aria-label="Main"]{width:100%;flex-wrap:nowrap!important;justify-content:space-between;column-gap:12px!important}
+nav[aria-label="Main"] a[href^="tel:"]{font-size:0!important;padding:0 14px!important;gap:6px}
+nav[aria-label="Main"] a[href^="tel:"]::after{content:"Call us";font-size:1rem}
+nav[aria-label="Project sectors"]{flex-wrap:nowrap!important;overflow-x:auto;margin-left:calc(-1 * clamp(20px,4vw,32px));margin-right:calc(-1 * clamp(20px,4vw,32px));padding:0 clamp(20px,4vw,32px) 4px;box-sizing:border-box;min-width:0;max-width:100vw;width:calc(100% + 2 * clamp(20px,4vw,32px));scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav[aria-label="Project sectors"]::-webkit-scrollbar{display:none}
+nav[aria-label="Project sectors"] a{flex:none;white-space:nowrap}
+svg[viewBox="0 0 597 412"]{max-height:200px}
+a[href^="mailto:"],a[href^="tel:"],h3>a{display:inline-flex!important;align-items:center;min-height:44px}
+button.send{width:100%}
+section[id],[id].anchor{scroll-margin-top:12px}
+}
 </style>
 </head>
 <body>
