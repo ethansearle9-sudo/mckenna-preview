@@ -16,8 +16,8 @@ a{color:#2A6877}a:hover{color:#18303B}
 .nav{color:#FFFFFF}.nav:hover{color:#F4B90B}
 .quiet{color:#18303B}.quiet:hover{color:#2A6877}
 .btn{color:#18303B;background:#F4B90B}.btn:hover{color:#18303B;background:#FFD04A}
+.dwg-short{display:none}
 a:focus-visible,button:focus-visible{outline:3px solid #F4B90B;outline-offset:2px;box-shadow:0 0 0 2px #18303B}
-@media (max-width:700px){.dwg-text{display:none}}
 
 /* Phone layout */
 @media (max-width:700px){
@@ -28,7 +28,10 @@ nav[aria-label="Main"] a[href^="tel:"]::after{content:"Call us";font-size:1rem}
 nav[aria-label="Project sectors"]{flex-wrap:nowrap!important;overflow-x:auto;margin-left:calc(-1 * clamp(20px,4vw,32px));margin-right:calc(-1 * clamp(20px,4vw,32px));padding:0 clamp(20px,4vw,32px) 4px;box-sizing:border-box;min-width:0;max-width:100vw;width:calc(100% + 2 * clamp(20px,4vw,32px));scrollbar-width:none;-webkit-overflow-scrolling:touch}
 nav[aria-label="Project sectors"]::-webkit-scrollbar{display:none}
 nav[aria-label="Project sectors"] a{flex:none;white-space:nowrap}
-svg[viewBox="0 0 597 412"]{max-height:200px}
+svg[viewBox="0 0 597 412"]{width:100%}
+.dwg-text text{font-size:19px;letter-spacing:-0.2px}
+.dwg-long{display:none}
+.dwg-short{display:inline}
 a[href^="mailto:"],a[href^="tel:"],h3>a{display:inline-flex!important;align-items:center;min-height:44px}
 button.send{width:100%}
 section[id],[id].anchor{scroll-margin-top:12px}
@@ -93,9 +96,9 @@ section[id],[id].anchor{scroll-margin-top:12px}
 <g class="dwg-text" fill="#A9BAC1" font-family="Barlow, Arial, sans-serif" font-size="13">
 <path d="M0 84H150M0 166H150M0 248H150" stroke="#56727E" stroke-width="1"/>
 <text x="0" y="76">Roof 17.000</text>
-<text x="0" y="158">Second floor 13.400</text>
-<text x="0" y="240">First floor 9.800</text>
-<text x="0" y="321">Ground 6.200 m OD Malin</text>
+<text x="0" y="158"><tspan class="dwg-long">Second</tspan><tspan class="dwg-short">2nd</tspan> floor 13.400</text>
+<text x="0" y="240"><tspan class="dwg-long">First</tspan><tspan class="dwg-short">1st</tspan> floor 9.800</text>
+<text x="0" y="321">Ground 6.200<tspan class="dwg-long"> m OD Malin</tspan></text>
 </g>
 </svg>
 </div>
